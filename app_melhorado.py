@@ -1,20 +1,4 @@
-"""
-Energia Inteligente — dashboard Streamlit
-Fluxo recomendado: ESP32 -> FastAPI -> Streamlit
-
-O dashboard consulta GET /api/atual a cada 2 segundos.
-Formato esperado da API:
-{
-    "tensao": 220.0,
-    "corrente": 0.52,
-    "potencia": 114.4,
-    "energia": 1.234,
-    "frequencia": 60.0,
-    "fator_potencia": 0.98,
-    "timestamp": "2026-11-17T16:40:00"
-}
-A API também pode retornar os dados dentro de "dados", "medicao" ou "ultima".
-"""
+"""Dashboard didático de monitoramento elétrico (simulação e ESP32 via HTTP)."""
 
 from datetime import datetime
 import math
